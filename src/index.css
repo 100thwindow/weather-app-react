@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@500;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  
+  text-align: center;
+  
+  
+}
+
+.search-bar {
+  margin: auto;
+  margin-top: 50px;
+  width: 350px;
+  max-width: 100%;
+  height: 40px;
+  border: solid rgba(50, 46, 46, 0.838) 2px;
+  border-radius: 20px;
+  background-color: rgba(246, 244, 244, 0.7);
+  font-size: 20px;
+  outline:none;
+  
+  display: inline-block;
+
+
+  
+}
+
+.weather-card {
+
+  width: 400px;
+  border: none;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 50px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.40);
+  max-width: 100%;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: wrap;
+ 
+
+}
+
+
+h1 {
+  font-weight: 200;
+  font-size: 35px;
+  color: black;
+  
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 100px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  bottom: 25px;
+  
+
+  
+}
+
+h3 {
+  font-size: 60px;
+  margin: 0px;
+  font-weight: 500;
+  padding: 0px;
+  position: relative;
+  bottom: 30px;
+}
+
+.search-bar::placeholder {
+  font-size: 20px;
+  padding: 90px;
+  color: rgba(50, 46, 46, 0.7);
+  font-weight: 700;
+  text-align:center;
+  text-overflow: ellipsis;
+  
+}
+
+
+@media only screen and (max-width: 480px) {
+  .search{
+    max-width: 80%;
+    margin: 0 auto;
+
+    
+  }
+
+}
+
+
+@media only screen and (max-width: 420px) {
+  .search-bar::placeholder{
+  
+   padding: 40px;
+   text-align: center;
+   margin-left: 0px;
+    
+  }
+
+}
+
+@media only screen and (max-width: 265px) {
+  .search-bar::placeholder{
+  
+   padding: 15px;
+   text-align: center;
+    
+  }
+
+}
+
+
+@media only screen and (max-width: 305px) {
+  h2{
+  
+  font-size: 75px;
+    
+  }
+
+}
+
+
+.last-div {
+  margin: 10px;
+  padding: 0px;
+}
+
+
+@media only screen and (max-width: 400px) {
+  h3{
+  
+  font-size: 40px;
+    
+  }
+
+}
